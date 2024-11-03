@@ -12,6 +12,7 @@ class Planter (NonFunctionalPottery):
 
 class NonHanging (Planter):
     class_counter = 000
+    class_path = "NonFunctional/Planters/Hanging/"
     def __init__(self, name, is_base=False):
         self.id = NonHanging.class_counter
         NonHanging.class_counter += 1
@@ -26,6 +27,7 @@ class NonHanging (Planter):
 class Hanging (Planter):
     """contains a is_base bool parameter that defaults to false"""
     class_counter = 000
+    class_path = "NonFunctional/Planters/NonHanging/"
 
     def __init__(self, name, is_base=False):
         self.id = Hanging.class_counter

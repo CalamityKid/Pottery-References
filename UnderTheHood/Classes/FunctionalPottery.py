@@ -11,6 +11,8 @@ class FunctionalPottery (Pottery):
 
 class Plate (FunctionalPottery):
     class_counter = 000
+    class_path = "Functional/Plate/"
+
     def __init__(self, name):
         self.id = Plate.class_counter
         Plate.class_counter += 1
@@ -22,6 +24,8 @@ class Plate (FunctionalPottery):
 
 class Bowl (FunctionalPottery):
     class_counter = 000
+    class_path = "Functional/Bowl/"
+
     def __init__(self, name):
         self.id = Bowl.class_counter
         Bowl.class_counter += 1
@@ -33,6 +37,8 @@ class Bowl (FunctionalPottery):
 
 class CupNoHandle (FunctionalPottery):
     class_counter = 000
+    class_path = "Functional/CupNoHandle/"
+    
     def __init__(self, name):
         self.id = CupNoHandle.class_counter
         CupNoHandle.class_counter += 1
@@ -44,6 +50,7 @@ class CupNoHandle (FunctionalPottery):
 
 class CupWithHandle (FunctionalPottery):
     class_counter = 000
+    class_path = "Functional/CupWithHandle/"
     def __init__(self, name):
         self.id = CupWithHandle.class_counter
         CupWithHandle.class_counter += 1
@@ -55,6 +62,7 @@ class CupWithHandle (FunctionalPottery):
 
 class Kettle (FunctionalPottery):
     class_counter = 000
+    class_path = "Functional/Kettle/"
     def __init__(self, name):
         self.id = Kettle.class_counter
         Kettle.class_counter += 1

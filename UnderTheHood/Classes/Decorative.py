@@ -15,6 +15,8 @@ class Vase (Decorative):
     """Category_id is this class' id in the superclass' class_categories dict, 
     class counter is the n+1 of instances of this class"""
     class_counter = 000
+    class_path = "NonFunctional/Decorative/Vase/"
+
     def __init__(self, name):
         self.id = Vase.class_counter
         Vase.class_counter += 1
@@ -26,6 +28,7 @@ class Vase (Decorative):
 
 class Jewelry (Decorative):
     class_counter = 000
+    class_path = "NonFunctional/Decorative/Jewelry/"
     def __init__(self, name):
         self.id = Jewelry.class_counter
         Jewelry.class_counter += 1
@@ -37,6 +40,7 @@ class Jewelry (Decorative):
 
 class Ashtray (Decorative):
     class_counter = 000
+    class_path = "NonFunctional/Decorative/Ashtray/"
     def __init__(self, name):
         self.id = Ashtray.class_counter
         Ashtray.class_counter += 1
